@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meeting-transcribe"
+version = "1.0.0"
+description = "Transcribe and summarize meeting audio files using Azure Speech and GitHub Copilot"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "azure-cognitiveservices-speech",
+    "imageio-ffmpeg",
+    "openai>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/droosma/vibe-transcription"
+
+[project.scripts]
+transcribe = "transcribe_tool.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+transcribe_tool = ["prompt.md"]

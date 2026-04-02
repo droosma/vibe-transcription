@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets / config
+.env
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Working files (transcripts, summaries, audio)
+*.m4a
+*.mp3
+*.wav
+*.txt
+*_summary.md
+
+# FFmpeg binary (users provide their own or use imageio-ffmpeg)
+ffmpeg.exe
+ffmpeg
