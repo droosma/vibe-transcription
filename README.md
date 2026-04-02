@@ -11,14 +11,14 @@ Requires Python 3.10+.
 Install from GitHub:
 
 ```bash
-pipx install git+https://github.com/droosma/meeting-transcribe.git
+pipx install git+https://github.com/droosma/vibe-transcription.git
 ```
 
 Or clone and install locally:
 
 ```bash
-git clone https://github.com/droosma/meeting-transcribe.git
-cd meeting-transcribe
+git clone https://github.com/droosma/vibe-transcription.git
+cd vibe-transcription
 pipx install .
 ```
 
